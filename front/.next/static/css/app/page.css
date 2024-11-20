@@ -1,0 +1,419 @@
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[13].use[5]!./src/components/Home/home.scss ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.home {
+  min-width: 99vw;
+  background: #fafbff;
+}
+.home .box-home {
+  padding: 6rem 2rem;
+  height: calc(100vh - 80px);
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+}
+.home .box-home .content-hero .content-title {
+  text-align: left;
+}
+.home .box-home .content-hero .content-title h1 strong {
+  color: #007bc7;
+}
+.home .box-home .content-hero .content-title p {
+  text-wrap: pretty;
+}
+.home .box-home .content-hero .content-buttom {
+  display: flex;
+  gap: 1rem;
+  padding-top: 1rem;
+  flex-wrap: wrap;
+}
+.home .box-home .box-animation {
+  transform: rotate(90deg);
+}
+@media (max-width: 975px) {
+  .home .box-home .box-animation {
+    display: none;
+  }
+}
+@media screen and (max-width: 400px) {
+  .home .box-home {
+    padding: 1rem;
+  }
+  .home .box-home .content-hero {
+    padding-top: 3rem;
+  }
+  .home .box-home .content-hero .content-title h1 {
+    font-size: 2.5rem;
+  }
+}
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[13].use[5]!./src/components/Animation/animation.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.Atom {
+  width: 420px;
+  height: 420px;
+  position: relative;
+  border-radius: 50%;
+}
+
+.Atom-nucleus,
+.Atom-nucleus:before {
+  position: absolute;
+  background: linear-gradient(-180deg, #61DBFB 0%, #61DBFB 100%);
+}
+
+.Atom-nucleus {
+  display: block;
+  content: "";
+  width: 25px;
+  height: 25px;
+  margin-left: -12.5px;
+  margin-top: -12.5px;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.Atom-nucleus:before {
+  display: block;
+  content: "";
+  width: 49px;
+  height: 49px;
+  margin-left: -24.5px;
+  margin-top: -24.5px;
+  border-radius: 50%;
+  top: 12.5px;
+  left: 12.5px;
+  opacity: 0.1;
+}
+
+.Atom-orbit {
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  border: solid 4px transparent;
+  transform-style: preserve-3d;
+}
+
+.Atom-orbit--visible {
+  border-radius: 50%;
+  border-color: white;
+}
+
+.Atom-electron {
+  transform-style: preserve-3d;
+}
+.Atom-electron:before {
+  display: block;
+  content: "";
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  margin-top: -12px;
+  border-radius: 50%;
+  position: absolute;
+  top: 210px;
+  left: 210px;
+}
+.Atom-electron:after {
+  display: block;
+  content: "";
+  width: 12px;
+  height: 12px;
+  margin-left: -6px;
+  margin-top: -6px;
+  border-radius: 50%;
+  position: absolute;
+  top: 210px;
+  left: 210px;
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.Atom-orbit--top.Atom-orbit--visible, #inner-ellipse-top {
+  transform: rotateZ(0deg) rotateY(70deg);
+}
+
+.Atom-orbit--top.Atom-orbit--foreground, #inner-ellipse-top {
+  transform: translateZ(100px) rotateZ(0deg) rotateY(70deg);
+}
+
+@keyframes rotate-top {
+  0% {
+    transform: rotate(0deg) translate(-210px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translate(-210px) rotate(-360deg);
+  }
+}
+@keyframes zind-left {
+  0% {
+    z-index: 1;
+  }
+  49% {
+    z-index: 1;
+  }
+  50% {
+    z-index: 3;
+  }
+  100% {
+    z-index: 3;
+  }
+}
+@keyframes zind-right {
+  0% {
+    z-index: 3;
+  }
+  49% {
+    z-index: 3;
+  }
+  50% {
+    z-index: 1;
+  }
+  100% {
+    z-index: 1;
+  }
+}
+@keyframes zind-top {
+  0% {
+    z-index: 1;
+  }
+  24% {
+    z-index: 1;
+  }
+  25% {
+    z-index: 3;
+  }
+  75% {
+    z-index: 3;
+  }
+  76% {
+    z-index: 1;
+  }
+}
+.Atom-orbit--top {
+  animation: zind-top infinite linear;
+  animation-duration: 7s;
+}
+.Atom-orbit--top .Atom-electron {
+  animation: rotate-top infinite linear;
+  animation-duration: 7s;
+  transform: rotate(0deg) translate(-210px) rotate(0deg);
+}
+.Atom-orbit--top .Atom-electron:before, .Atom-orbit--top .Atom-electron:after {
+  transform: rotateY(-70deg) rotateZ(0deg);
+}
+.Atom-orbit--top .Atom-electron:before {
+  background: linear-gradient(-180deg, #61DBFB 0%, #61DBFB 100%);
+  opacity: 0.2;
+}
+.Atom-orbit--top .Atom-electron:after {
+  background: linear-gradient(-180deg, #61DBFB 0%, #61DBFB 100%);
+  box-shadow: 0px 0px 5px 0px #61DBFB;
+}
+
+.Atom-orbit--left.Atom-orbit--visible, #inner-ellipse-left {
+  transform: rotateZ(-60deg) rotateY(70deg);
+}
+
+.Atom-orbit--left.Atom-orbit--foreground, #inner-ellipse-left {
+  transform: translateZ(100px) rotateZ(-60deg) rotateY(70deg);
+}
+
+@keyframes rotate-left {
+  0% {
+    transform: rotate(60deg) translate(-210px) rotate(-60deg);
+  }
+  100% {
+    transform: rotate(420deg) translate(-210px) rotate(-420deg);
+  }
+}
+@keyframes zind-left {
+  0% {
+    z-index: 1;
+  }
+  49% {
+    z-index: 1;
+  }
+  50% {
+    z-index: 3;
+  }
+  100% {
+    z-index: 3;
+  }
+}
+@keyframes zind-right {
+  0% {
+    z-index: 3;
+  }
+  49% {
+    z-index: 3;
+  }
+  50% {
+    z-index: 1;
+  }
+  100% {
+    z-index: 1;
+  }
+}
+@keyframes zind-top {
+  0% {
+    z-index: 1;
+  }
+  24% {
+    z-index: 1;
+  }
+  25% {
+    z-index: 3;
+  }
+  75% {
+    z-index: 3;
+  }
+  76% {
+    z-index: 1;
+  }
+}
+.Atom-orbit--left {
+  animation: zind-left infinite linear;
+  animation-duration: 3.5s;
+}
+.Atom-orbit--left .Atom-electron {
+  animation: rotate-left infinite linear;
+  animation-duration: 3.5s;
+  transform: rotate(60deg) translate(-210px) rotate(-60deg);
+}
+.Atom-orbit--left .Atom-electron:before, .Atom-orbit--left .Atom-electron:after {
+  transform: rotateY(-70deg) rotateZ(60deg);
+}
+.Atom-orbit--left .Atom-electron:before {
+  background: linear-gradient(-180deg, #61DBFB 0%, #61DBFB 100%);
+  opacity: 0.2;
+}
+.Atom-orbit--left .Atom-electron:after {
+  background: linear-gradient(-180deg, #61DBFB 0%, #61DBFB 100%);
+  box-shadow: 0px 0px 5px 0px #61DBFB;
+}
+
+.Atom-orbit--right.Atom-orbit--visible, #inner-ellipse-right {
+  transform: rotateZ(60deg) rotateY(70deg);
+}
+
+.Atom-orbit--right.Atom-orbit--foreground, #inner-ellipse-right {
+  transform: translateZ(100px) rotateZ(60deg) rotateY(70deg);
+}
+
+@keyframes rotate-right {
+  0% {
+    transform: rotate(120deg) translate(-210px) rotate(-120deg);
+  }
+  100% {
+    transform: rotate(480deg) translate(-210px) rotate(-480deg);
+  }
+}
+@keyframes zind-left {
+  0% {
+    z-index: 1;
+  }
+  49% {
+    z-index: 1;
+  }
+  50% {
+    z-index: 3;
+  }
+  100% {
+    z-index: 3;
+  }
+}
+@keyframes zind-right {
+  0% {
+    z-index: 3;
+  }
+  49% {
+    z-index: 3;
+  }
+  50% {
+    z-index: 1;
+  }
+  100% {
+    z-index: 1;
+  }
+}
+@keyframes zind-top {
+  0% {
+    z-index: 1;
+  }
+  24% {
+    z-index: 1;
+  }
+  25% {
+    z-index: 3;
+  }
+  75% {
+    z-index: 3;
+  }
+  76% {
+    z-index: 1;
+  }
+}
+.Atom-orbit--right {
+  animation: zind-right infinite linear;
+  animation-duration: 5s;
+}
+.Atom-orbit--right .Atom-electron {
+  animation: rotate-right infinite linear;
+  animation-duration: 5s;
+  transform: rotate(120deg) translate(-210px) rotate(-120deg);
+}
+.Atom-orbit--right .Atom-electron:before, .Atom-orbit--right .Atom-electron:after {
+  transform: rotateY(-70deg) rotateZ(-60deg);
+}
+.Atom-orbit--right .Atom-electron:before {
+  background: linear-gradient(-180deg, #61DBFB 0%, #61DBFB 100%);
+  opacity: 0.2;
+}
+.Atom-orbit--right .Atom-electron:after {
+  background: linear-gradient(-180deg, #61DBFB 0%, #61DBFB 100%);
+  box-shadow: 0px 0px 5px 0px #61DBFB;
+}
+
+#react {
+  width: 410px;
+  height: 450px;
+  position: relative;
+  overflow: hidden;
+  padding-top: 10px;
+}
+
+#inner-ellipse-left {
+  border: 9px solid #61dafb;
+  width: 420px;
+  height: 420px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+#inner-ellipse-right {
+  border: 9px solid #61dafb;
+  width: 420px;
+  height: 420px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+#inner-ellipse-top {
+  border: 9px solid #61dafb;
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+}
+
+#dot {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #61dafb;
+  box-shadow: 0 0 12px 4px #61DBFB;
+  border-radius: 50%;
+  top: 45%;
+  right: 45%;
+}

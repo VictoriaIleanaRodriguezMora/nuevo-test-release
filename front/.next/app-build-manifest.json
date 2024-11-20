@@ -1,0 +1,39 @@
+{
+  "pages": {
+    "/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/page.css",
+      "static/chunks/app/page.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/layout.css",
+      "static/chunks/app/layout.js"
+    ],
+    "/components/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/components/page.js"
+    ],
+    "/components/typography/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/components/typography/page.css",
+      "static/chunks/app/components/typography/page.js"
+    ],
+    "/components/list-link/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/components/list-link/page.css",
+      "static/chunks/app/components/list-link/page.js"
+    ],
+    "/components/step-list/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/components/step-list/page.css",
+      "static/chunks/app/components/step-list/page.js"
+    ]
+  }
+}

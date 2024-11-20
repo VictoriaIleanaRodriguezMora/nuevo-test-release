@@ -1,0 +1,224 @@
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[13].use[5]!./src/app/globals.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 95px;
+}
+
+body {
+  position: relative;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  /* Anchura del scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #007bc7;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f0f0f0;
+}
+
+hr {
+  width: 100%;
+  height: 1px;
+  background: #f3f6f9;
+}
+
+.box-code {
+  width: 100%;
+  position: relative;
+}
+.box-code::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-image: url(/_next/static/media/copy.a1c91349.svg);
+  background-size: 20px;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.box-code:hover::before {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+@media (max-width: 974px) {
+  .box .nav-left {
+    display: none;
+  }
+}
+.box .nav-left {
+  max-width: 340px;
+  min-width: 340px;
+  height: calc(95vh - 120px);
+  overflow-y: auto;
+  padding: 0 2rem 2rem;
+  top: 120px;
+  position: -webkit-sticky;
+  position: sticky;
+  scrollbar-width: thin;
+  scrollbar-color: #38485c #f0f0f0;
+}
+.box .nav-left::-webkit-scrollbar {
+  width: 8px;
+}
+.box .nav-left::-webkit-scrollbar-thumb {
+  background-color: #38485c;
+}
+.box .nav-left::-webkit-scrollbar-track {
+  background-color: #f0f0f0;
+}
+.box .nav-left .nav-left-box-title {
+  padding: 1rem 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background: white;
+  box-shadow: 0 0 0 0.225rem white;
+}
+
+.component-container > .btn:not(:last-child) {
+  margin: 1rem 1rem 1rem 0;
+}
+.component-container__spinner {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.box-scrollspy {
+  margin: 0 auto;
+  display: flex;
+}
+.box-scrollspy .nav-scrollspy {
+  position: relative;
+  order: 2;
+}
+.box-scrollspy .nav-scrollspy .scrollspy {
+  list-style: none;
+  top: 140px;
+  right: 0;
+  background-color: #fff;
+  padding: 1rem 0 0 2rem;
+  position: -webkit-sticky;
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.box-scrollspy .nav-scrollspy .scrollspy a {
+  text-decoration: none;
+  color: #38485c;
+}
+.box-scrollspy .nav-scrollspy .scrollspy .active a {
+  color: #007bc7;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+
+.gap-2 {
+  gap: 1.5rem;
+}
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[13].use[5]!./src/components/Layout/layout.scss ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.navbar {
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+.navbar .navbar-brand {
+  position: relative;
+  transition: all 0.3s ease;
+}
+.navbar .navbar-brand::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to bottom, transparent 10%, rgba(210, 210, 210, 0.05) 50%, rgba(200, 200, 200, 0.062) 95%);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.navbar .navbar-brand:hover {
+  transform: perspective(250px) rotateX(20deg) translateY(-5%) translateZ(0);
+}
+.navbar .navbar-brand:hover .react-logo {
+  opacity: 1;
+  transform: translateY(10%);
+}
+.navbar .navbar-brand:hover::before {
+  opacity: 1;
+}
+.navbar .navbar-brand .header-logo {
+  box-shadow: 0 60px 60px -60px rgba(0, 30, 255, 0.5);
+}
+.navbar .navbar-brand .react-logo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transform: translateY(25%);
+  transition: 0.3s ease;
+  opacity: 0;
+}
+.navbar .drawerCustom {
+  background-color: #ffffff;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding-top: 2rem;
+  z-index: 1;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  white-space: nowrap;
+}
+.navbar .custom-nav .nav {
+  flex-direction: row !important;
+}
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[12].use[3]!./node_modules/react-modern-drawer/dist/index.css ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************/
+.EZDrawer .EZDrawer__checkbox {
+  display: none; }
+  .EZDrawer .EZDrawer__checkbox:checked ~ .EZDrawer__overlay {
+    display: block;
+    opacity: 1; }
+  .EZDrawer .EZDrawer__checkbox:checked ~ .EZDrawer__container {
+    visibility: visible;
+    transform: translate3d(0, 0, 0) !important; }
+
+.EZDrawer .EZDrawer__overlay {
+  display: none;
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%; }
+
+.EZDrawer .EZDrawer__container {
+  position: fixed;
+  visibility: hidden;
+  background: white;
+  transition: all;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1); }
+

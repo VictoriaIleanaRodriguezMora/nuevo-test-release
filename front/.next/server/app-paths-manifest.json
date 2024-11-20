@@ -1,0 +1,7 @@
+{
+  "/page": "app/page.js",
+  "/components/page": "app/components/page.js",
+  "/components/typography/page": "app/components/typography/page.js",
+  "/components/list-link/page": "app/components/list-link/page.js",
+  "/components/step-list/page": "app/components/step-list/page.js"
+}

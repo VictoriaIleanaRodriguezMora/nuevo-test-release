@@ -1,0 +1,191 @@
+// @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded');
+@import url('../../node_modules/boxicons/css/boxicons.min.css');
+@import '../../../dist/styles.css';
+
+// Generic Styles
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  position: relative;
+  scrollbar-width: thin;
+  scrollbar-color: #38485c #f0f0f0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+// ::-webkit-scrollbar {
+//   width: 8px;
+// }
+
+// ::-webkit-scrollbar-thumb {
+//   background-color: #38485c;
+// }
+
+// ::-webkit-scrollbar-track {
+//   background-color: #f0f0f0;
+// }
+
+// End Generic Styles
+
+// Styles for Divisor
+hr {
+  width: 100%;
+  height: 1px;
+  background: #f3f6f9;
+}
+
+// End Styles for Divisor
+
+//Styles for component Scrollspy
+.box-scrollspy {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+
+  .nav-scrollspy {
+    position: relative;
+    min-width: 150px;
+
+    .scrollspy {
+      list-style: none;
+      top: 140px;
+      right: 0;
+      background-color: transparent;
+      padding: 0 0 0 2rem;
+      position: sticky;
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+
+      li a {
+        font-weight: 600;
+        font-family:
+          'Nunito',
+          'Open Sans',
+          system-ui,
+          -apple-system,
+          'Segoe UI',
+          Roboto,
+          'Helvetica Neue',
+          Arial,
+          'Noto Sans',
+          sans-serif,
+          'Apple Color Emoji',
+          'Segoe UI Emoji',
+          'Segoe UI Symbol',
+          'Noto Color Emoji';
+      }
+
+      li:active a {
+        box-shadow: 0 0 0 0.125rem #218274;
+        border-radius: 0.5rem;
+      }
+
+      a {
+        text-decoration: none;
+        color: #101e37;
+      }
+
+      .active {
+        a {
+          color: #336acc;
+
+          &:focus,
+          &:active {
+            box-shadow: 0 0 0 0.125rem #218274;
+          }
+        }
+      }
+    }
+  }
+  .box-content section:last-child {
+    min-height: calc(100vh - 83px);
+  }
+}
+
+// End Styles for component Scrollspy
+
+// Toast Styles
+.custom-toast {
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.075);
+  font-family:
+    'Nunito',
+    'Open Sans',
+    system-ui,
+    -apple-system,
+    'Segoe UI',
+    roboto,
+    'Helvetica Neue',
+    arial,
+    'Noto Sans',
+    sans-serif,
+    'Apple Color Emoji',
+    'Segoe UI Emoji',
+    'Segoe UI Symbol',
+    'Noto Color Emoji';
+  font-size: 0.875rem;
+  color: #101e37;
+  background-color: #f3f6f9;
+  right: 0;
+
+  div[data-title] {
+    font-weight: 700;
+    font-size: 1rem;
+  }
+  div[data-icon] {
+    color: #26874a;
+  }
+}
+
+// End Toast Styles
+
+// Class custom
+.border-none {
+  border: none;
+}
+
+// max-width 720px
+.max-720 {
+  max-width: 720px;
+}
+
+.max-600 {
+  max-width: 600px;
+}
+
+.v-height-100 {
+  min-height: calc(100dvh - 83px);
+}
+
+.color-box {
+  width: 192px;
+  height: 72px;
+  border-radius: 0.5rem;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* estilos navegacion vertical izquierdo */
+.sticky-nav {
+  position: sticky;
+  top: 132px;
+  overflow-y: scroll;
+  height: 75dvh;
+
+  nav {
+    padding: 0.3rem;
+    margin-bottom: 1.5rem;
+  }
+}
+.box-content {
+  width: 100%;
+}
