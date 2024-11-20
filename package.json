@@ -1,5 +1,5 @@
 {
-  "name": "@gcba/obelisco-v2",
+  "name": "victoria-package",
   "version": "0.0.0-development",
   "description": "",
   "private": false,
@@ -53,6 +53,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gcba/Obelisco-v2.git"
+    "url": "https://github.com/VictoriaIleanaRodriguezMora/nuevo-test-release"
   }
 }
