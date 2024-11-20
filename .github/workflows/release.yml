@@ -11,7 +11,10 @@ on:
       - main
     paths-ignore:
       - 'app/**'
- 
+
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
