@@ -1,6 +1,6 @@
 {
   "name": "victoria-package",
-  "version": "0.0.0-development",
+  "version": "1.2.2",
   "description": "",
   "private": false,
   "main": "dist/styles.css",
