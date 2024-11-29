@@ -44,6 +44,8 @@ jobs:
         uses: amannn/action-semantic-pull-request@v4
         with:
           validateSingleCommit: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  
 
   release:
     needs: [build]
