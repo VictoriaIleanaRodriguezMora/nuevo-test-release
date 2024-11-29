@@ -36,8 +36,9 @@ jobs:
  
       - name: Run lint
         run: npm run lint:library
- 
+
   validate-pr:
+    if: github.event_name == 'pull_request'
     runs-on: ubuntu-latest
     steps:
       - name: Check PR title follows semantic convention
@@ -45,7 +46,7 @@ jobs:
         with:
           validateSingleCommit: true
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   release:
     needs: [build]
