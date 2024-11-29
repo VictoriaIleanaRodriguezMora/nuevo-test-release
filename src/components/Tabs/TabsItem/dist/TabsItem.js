@@ -11,3 +11,4 @@ function TabsItem(_a) {
     return (react_1["default"].createElement("li", { id: "" + incrementedClassName, className: "nav-item " + (className ? className : ""), role: role }, children));
 }
 exports["default"] = TabsItem;
+
