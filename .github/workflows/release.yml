@@ -37,13 +37,23 @@ jobs:
       - name: Run lint
         run: npm run lint:library
  
+  validate-pr:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check PR title follows semantic convention
+        uses: amannn/action-semantic-pull-request@v4
+        with:
+          validateSingleCommit: true
+
   release:
-    needs: build
+    needs: [build]
     runs-on: ubuntu-latest
  
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 1  # Solo trae el último commit de la rama main
  
       - name: Set up Node.js
         uses: actions/setup-node@v2
@@ -53,13 +63,8 @@ jobs:
       - name: Install dependencies
         run: npm install
  
-      - name: Limit to Last Commit
-        run: |
-          export LAST_COMMIT=$(git log -1 --pretty=format:"%H")
-          git reset --soft $LAST_COMMIT
-
       - name: Semantic Release
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-          GITHUB_TOKEN: ${{ secrets.TOKEN_GITHUB }}
-        run: npm run semantic-release --no-ci
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npx semantic-release --no-ci
