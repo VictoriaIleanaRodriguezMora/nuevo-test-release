@@ -11,3 +11,5 @@ function TabsDiv(_a) {
     return (react_1["default"].createElement("div", { className: "tab-pane fade " + (className ? className : ""), id: "" + incrementedClassName, role: "tabpanel", "aria-label": "4-tab" }, children));
 }
 exports["default"] = TabsDiv;
+
+
