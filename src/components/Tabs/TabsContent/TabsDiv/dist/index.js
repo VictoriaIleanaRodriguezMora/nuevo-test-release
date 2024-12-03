@@ -9,3 +9,4 @@ var __createBinding = (this && this.__createBinding) || (Object.create ? (functi
 exports.__esModule = true;
 var TabsDiv_1 = require("./TabsDiv");
 __createBinding(exports, TabsDiv_1, "default");
+
